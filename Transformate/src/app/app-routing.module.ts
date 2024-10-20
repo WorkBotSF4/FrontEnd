@@ -1,25 +1,20 @@
-import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
 import { RegisterComponent } from './componentes/register/register.component';
 import { LoginComponent } from './componentes/login/login.component';
-//import { authGuard } from './guards/auth.guard';
-const routes: Routes = [{
 
-  //este es el login
-  path: 'login',
-  component: LoginComponent,
-  pathMatch: 'full',
-},
-{
-  //esta es la pesta;a de registro
-  path: 'register',
-  component: RegisterComponent,
-},
+const routes: Routes = [
+  { path: '', component: AppComponent },
+  { path: 'some-path', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '**', redirectTo: '/login' }
 ];
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-})
 
+@NgModule({
+  imports: [RouterModule.forRoot(routes)], // Solo aquí usamos forRoot
+  exports: [RouterModule]
+})
 export class AppRoutingModule { }

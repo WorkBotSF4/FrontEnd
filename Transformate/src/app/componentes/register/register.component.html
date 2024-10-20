@@ -3,7 +3,7 @@
     <div class="field">
       <label for="user">Usuario</label>
       <input type="text" pInputText formControlName="usuario" class="w-full" name="user" placeholder="Minino123" />
-      <small *ngIf="usuario.invalid && (usuario.dirty || usuario.touched)" class="block p-error">
+        <small *ngIf="usuario.invalid && (usuario.dirty || usuario.touched)" class="block p-error">
         <div *ngIf="usuario.errors?.['required']">Usuario es requerido.</div>
         <div *ngIf="usuario.errors?.['pattern']">Ingresa un usuario valido</div>
       </small>
@@ -51,19 +51,10 @@
         placeholder="Cardenas Osorio" />
       <small *ngIf="apellido.invalid && (apellido.dirty || apellido.touched)" class="block p-error">
         <div *ngIf="apellido.errors?.['required']">El apellido es requerido.</div>
-        <div *ngIf="apellido.errors?.['pattern']">Ingresa un apellido valido</div>
+        <div *ngIf="apellido.errors?.['pattern']">Enter a valid lastName</div>
       </small>
     </div>
-    <div class="field">
-      <label for="rol">Rol</label>
-      <input list="opciones" pInputText formControlName="rol" class="w-full" name="rol"placeholder="Usuario" />
-      <datalist id="myOptions">
-        <option value="Usuario">
-        <option value="Administrador">
-        <option value="Entrenador">
 
-</datalist>
-    </div>
     <div class="field">
       <label for="direction">Dirección</label>
       <input type="text" pInputText formControlName="direccion" class="w-full" name="direction"
@@ -74,17 +65,18 @@
       </small>
     </div>
     <div class="field">
-      <label for="celular">Celular</label>
-      <input type="number" pInputText formControlName="celular" class="w-full" name="celular"
-        placeholder="Calle 5 #26-15" />
-      <small *ngIf="celular.invalid && (celular.dirty || celular.touched)" class="block p-error">
-        <div *ngIf="celular.errors?.['required']">La direccion es requerida</div>
-        <div *ngIf="celular.errors?.['pattern']">Ingresa una direccion valida</div>
-      </small>
-    </div>
+  <label for="cellular">Celular</label>
+  <input type="text" pInputText formControlName="celular" class="w-full" name="cellular"
+    placeholder="Número de Celular" />
+  <small *ngIf="celular.invalid && (celular.dirty || celular.touched)" class="block p-error">
+    <div *ngIf="celular.errors?.['required']">El número de celular es requerido</div>
+    <div *ngIf="celular.errors?.['pattern']">Ingresa un número de celular válido</div>
+  </small>
+</div>
+
     <div class="field">
-      <label for="rutina">Rutina</label>
-      <input type="text" pInputText formControlName="rutina" class="w-full" name="rutina"
+      <label for="routine">Rutina</label>
+      <input type="text" pInputText formControlName="rutina" class="w-full" name="routine"
         placeholder="Pierna" />
 
     </div>

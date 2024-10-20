@@ -1,18 +1,20 @@
 import { passwordMatchValidator } from './../../shared/comparadorContraseValidator.directive';
 import { RegistroCredenciales } from './../../interfaces/registroCredenciales';
 import { Component } from '@angular/core';
-import { RegistrarRespuesta } from '../../interfaces/registrarRespuesta';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CardModule,  } from 'primeng/card';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
 import { AutenticacionService } from '../../servicios/autenticacion.service';
-
+import { ButtonModule } from 'primeng/button';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-register',
-  standalone: true,
-  imports: [],
+standalone: true,
+imports: [ButtonModule,CardModule,ReactiveFormsModule,CommonModule],
   templateUrl: './register.component.html',
   styleUrl: './register.component.css'
 })
@@ -34,6 +36,14 @@ export class RegisterComponent {
   }, {
     validators: passwordMatchValidator
   })}
+  /*ngOnInit() {
+    this.registerForm = this.fb.group({
+      nombre: ['', [Validators.required, Validators.pattern(/^[a-zA-Z]+(?: [a-zA-Z]+)*$/)]],
+    apellido: ['', [Validators.required, Validators.pattern(/^[a-zA-Z]+(?: [a-zA-Z]+)*$/)]],
+    usuario: ['', [Validators.required, Validators.pattern(/^[a-zA-Z]+(?: [a-zA-Z]+)*$/)]],
+    contrasena: ['', Validators.required],
+    confirmPassword: ['', Validators.required]
+    });*/
   get usuario() {
     return this.registerForm.controls['usuario'];
   }
