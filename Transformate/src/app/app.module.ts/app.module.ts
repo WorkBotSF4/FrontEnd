@@ -10,7 +10,7 @@ import { CardModule } from 'primeng/card';
 import { CommonModule } from '@angular/common';
 import { MessageService } from 'primeng/api';
 
-import { LoginComponent } from '../componentes/login/login.component';
+import { LoginComponent } from '../componentes/log/login.component';
 import { RegisterComponent } from '../componentes/register/register.component';
 
 

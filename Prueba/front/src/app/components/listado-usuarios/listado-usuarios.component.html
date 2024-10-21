@@ -1,0 +1,27 @@
+<form [formGroup]="listadoForm" >
+  <p-card header="Listado" [style]="{ width: '400px' }">
+    <div class="field">
+      <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Documento</th>
+      <th>Rol</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.nombre }}</td>
+      <td>{{ user.documento }}</td>
+      <td>{{ user.rol }}</td>
+      <td>
+        <p-button styleClass="w-1/3" type="submit" (click)="onModifyUser(user)">Modificar</p-button>
+        <p-button styleClass="w-1/3" type="submit" (click)="onDeleteUser(user)">Eliminar</p-button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+  </p-card>
+</form>

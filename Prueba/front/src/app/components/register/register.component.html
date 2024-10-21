@@ -1,9 +1,31 @@
 <form [formGroup]="registerForm" (ngSubmit)="submitDetails()">
-  <p-card header="Registro" [style]="{ width: '360px' }">
+  <p-card header="Registro" [style]="{ width: '400px' }">
+
+    <div class="field">
+      <label for="Name">Nombre</label>
+      <input type="text" pInputText formControlName="nombre" class="w-full" name="Name" placeholder="Pablito" />
+      <small *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)" class="block p-error">
+        <div *ngIf="nombre.errors?.['required']">El nombre es requerido.</div>
+        <div *ngIf="nombre.errors?.['pattern']">Ingresa un nombre valido</div>
+      </small>
+    </div>
+
+
+    <div class="field">
+      <label for="lastName">Apellido</label>
+      <input type="text" pInputText formControlName="apellido" class="w-full" name="lastName"
+        placeholder="Cardenas Osorio" />
+      <small *ngIf="apellido.invalid && (apellido.dirty || apellido.touched)" class="block p-error">
+        <div *ngIf="apellido.errors?.['required']">El apellido es requerido.</div>
+        <div *ngIf="apellido.errors?.['pattern']">Enter a valid lastName</div>
+      </small>
+    </div>
+
+
     <div class="field">
       <label for="user">Usuario</label>
       <input type="text" pInputText formControlName="usuario" class="w-full" name="user" placeholder="Minino123" />
-        <small *ngIf="usuario.invalid && (usuario.dirty || usuario.touched)" class="block p-error">
+      <small *ngIf="usuario.invalid && (usuario.dirty || usuario.touched)" class="block p-error">
         <div *ngIf="usuario.errors?.['required']">Usuario es requerido.</div>
         <div *ngIf="usuario.errors?.['pattern']">Ingresa un usuario valido</div>
       </small>
@@ -36,34 +58,6 @@
       </small>
     </div>
     <div class="field">
-      <label for="Name">Nombre</label>
-      <input type="text" pInputText formControlName="nombre" class="w-full" name="Name" placeholder="Pablito" />
-      <small *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)" class="block p-error">
-        <div *ngIf="nombre.errors?.['required']">El nombre es requerido.</div>
-        <div *ngIf="nombre.errors?.['pattern']">Ingresa un nombre valido</div>
-      </small>
-    </div>
-
-
-    <div class="field">
-      <label for="lastName">Apellido</label>
-      <input type="text" pInputText formControlName="apellido" class="w-full" name="lastName"
-        placeholder="Cardenas Osorio" />
-      <small *ngIf="apellido.invalid && (apellido.dirty || apellido.touched)" class="block p-error">
-        <div *ngIf="apellido.errors?.['required']">El apellido es requerido.</div>
-        <div *ngIf="apellido.errors?.['pattern']">Enter a valid lastName</div>
-      </small>
-    </div>
-    <div class="field">
-      <label for="document">Documento</label>
-      <input type="text" pInputText formControlName="documento" class="w-full" name="document"
-        placeholder="Calle 5 #26-15" />
-      <small *ngIf="documento.invalid && (documento.dirty || documento.touched)" class="block p-error">
-        <div *ngIf="documento.errors?.['required']">El documento es requerida</div>
-        <div *ngIf="documento.errors?.['pattern']">Ingresa un documento valida</div>
-      </small>
-    </div>
-    <div class="field">
       <label for="direction">Dirección</label>
       <input type="text" pInputText formControlName="direccion" class="w-full" name="direction"
         placeholder="Calle 5 #26-15" />
@@ -88,7 +82,7 @@
         placeholder="Pierna" />
 
     </div>
-    <p-button label="Register" styleClass="w-full" [disabled]="registerForm.invalid" type="submit">Registrar</p-button>
+    <p-button label="Registrar" styleClass="w-full" [disabled]="registerForm.invalid" type="submit"></p-button>
     <div class="mt-2">¿Ya estas registrado? <a routerLink="/login">Login</a></div>
   </p-card>
 </form>

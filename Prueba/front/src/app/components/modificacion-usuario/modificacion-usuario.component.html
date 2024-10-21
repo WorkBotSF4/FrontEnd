@@ -1,0 +1,28 @@
+<form [formGroup]="modifUserForm" >
+  <p-card header="Modificar" [style]="{ width: '400px' }">
+  <div class="field">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" value="Maria gomez" readonly>
+  </div>
+  <div class="field">
+    <label for="rol">Rol:</label>
+    <div class="radio-group">
+      <input type="radio" id="rol-admin" name="rol" value="Administrador" [checked]="false">
+      <label for="rol-admin">Administrador</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="rol-usuario" name="rol" value="Usuario" [checked]="false">
+      <label for="rol-usuario">Usuario</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="rol-entrenador" name="rol" value="Entrenador" [checked]="true">
+      <label for="rol-entrenador">Entrenador</label>
+    </div>
+  </div>
+  <div class="field">
+
+    <p-button styleClass="w-1/3" type="submit" (click)="guardar()">Guardar</p-button>
+    <p-button styleClass="w-1/3" type="submit" (click)="cancelar()">Cancelar</p-button>
+  </div>
+  </p-card>
+</form>
