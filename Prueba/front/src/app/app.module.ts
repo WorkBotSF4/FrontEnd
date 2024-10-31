@@ -18,6 +18,8 @@ import { MessageService } from 'primeng/api';
 import { CommonModule } from '@angular/common';
 import { ListadoUsuariosComponent } from './components/listado-usuarios/listado-usuarios.component';
 import { ModificacionUsuarioComponent } from './components/modificacion-usuario/modificacion-usuario.component';
+import { EjerciciosComponent } from './components/ejercicios/ejercicios.component';
+import { RutinaComponent } from './components/rutina/rutina.component';
 
 
 
@@ -32,6 +34,8 @@ import { ModificacionUsuarioComponent } from './components/modificacion-usuario/
     RegisterComponent,
     ListadoUsuariosComponent,
     ModificacionUsuarioComponent,
+    EjerciciosComponent,
+    RutinaComponent,
 
 
 

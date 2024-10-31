@@ -7,10 +7,20 @@ import { FormsModule } from '@angular/forms';
 import { VistaAdministradorComponent } from './components/vista-administrador/vista-administrador.component';
 import { VistaEntrenadorComponent } from './components/vista-entrenador/vista-entrenador.component';
 import { VistaUsuarioComponent } from './components/vista-usuario/vista-usuario.component';
+import { EjerciciosComponent } from './components/ejercicios/ejercicios.component';
+import { RutinaComponent } from './components/rutina/rutina.component';
 
 const routes: Routes = [
   {
     path:'',
+    component:RutinaComponent,
+  },
+  {
+    path:'ejercicios',
+    component:EjerciciosComponent,
+  },
+  {
+    path:'Vistauser',
     component:VistaUsuarioComponent,
   },
   {
