@@ -9,10 +9,20 @@ import { VistaEntrenadorComponent } from './components/vista-entrenador/vista-en
 import { VistaUsuarioComponent } from './components/vista-usuario/vista-usuario.component';
 import { EjerciciosComponent } from './components/ejercicios/ejercicios.component';
 import { RutinaComponent } from './components/rutina/rutina.component';
+import { ConsultarRutinasComponent } from './components/consultar-rutinas/consultar-rutinas.component';
+import { ConsultarClasesComponent } from './components/consultar-clases/consultar-clases.component';
 
 const routes: Routes = [
   {
+    path:'consultarclas',
+    component:ConsultarClasesComponent,
+  },
+  {
     path:'',
+    component:ConsultarRutinasComponent,
+  },
+  {
+    path:'rutina',
     component:RutinaComponent,
   },
   {
