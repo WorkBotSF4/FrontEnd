@@ -20,6 +20,9 @@ import { ListadoUsuariosComponent } from './components/listado-usuarios/listado-
 import { ModificacionUsuarioComponent } from './components/modificacion-usuario/modificacion-usuario.component';
 import { EjerciciosComponent } from './components/ejercicios/ejercicios.component';
 import { RutinaComponent } from './components/rutina/rutina.component';
+import { ConsultarRutinasComponent } from './components/consultar-rutinas/consultar-rutinas.component';
+import { ConsultarClasesComponent } from './components/consultar-clases/consultar-clases.component';
+import { ClasesComponent } from './components/clases/clases.component';
 
 
 
@@ -36,6 +39,9 @@ import { RutinaComponent } from './components/rutina/rutina.component';
     ModificacionUsuarioComponent,
     EjerciciosComponent,
     RutinaComponent,
+    ConsultarRutinasComponent,
+    ConsultarClasesComponent,
+    ClasesComponent,
 
 
 
