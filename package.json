@@ -3,8 +3,5 @@
     "@angular/router": "^18.2.8",
     "primeicons": "^7.0.0",
     "primeng": "^17.18.11"
-  },
-  "devDependencies": {
-    "@types/jasmine": "^5.1.4"
   }
 }

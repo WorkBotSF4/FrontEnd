@@ -18,9 +18,6 @@ import { MessageService } from 'primeng/api';
 import { CommonModule } from '@angular/common';
 import { ListadoUsuariosComponent } from './components/listado-usuarios/listado-usuarios.component';
 import { ModificacionUsuarioComponent } from './components/modificacion-usuario/modificacion-usuario.component';
-import { VistaAdministradorComponent } from './components/vista-administrador/vista-administrador.component';
-import { VistaEntrenadorComponent } from './components/vista-entrenador/vista-entrenador.component';
-import { VistaUsuarioComponent } from './components/vista-usuario/vista-usuario.component';
 
 
 
@@ -35,9 +32,6 @@ import { VistaUsuarioComponent } from './components/vista-usuario/vista-usuario.
     RegisterComponent,
     ListadoUsuariosComponent,
     ModificacionUsuarioComponent,
-    VistaAdministradorComponent,
-
-
 
 
 
@@ -46,7 +40,6 @@ import { VistaUsuarioComponent } from './components/vista-usuario/vista-usuario.
 
   ],
   imports: [
-    VistaAdministradorComponent,
     BrowserModule,
     AppRoutingModule,
     CardModule,

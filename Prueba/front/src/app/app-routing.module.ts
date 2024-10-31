@@ -8,23 +8,20 @@ import { VistaAdministradorComponent } from './components/vista-administrador/vi
 import { VistaEntrenadorComponent } from './components/vista-entrenador/vista-entrenador.component';
 import { VistaUsuarioComponent } from './components/vista-usuario/vista-usuario.component';
 
-
-
 const routes: Routes = [
   {
     path:'',
-    component : VistaUsuarioComponent
+    component:VistaUsuarioComponent,
   },
   {
-    path: 'VistaEn',
-    component: VistaEntrenadorComponent
-
+    path:'Vistan',
+    component: VistaEntrenadorComponent,
   },
+
   {
-    path: 'VistaAdministrador',
-    component:VistaAdministradorComponent,
+    path:'Vistaad',
+    component: VistaAdministradorComponent,
   },
-
 {
   //este es el login
   path: 'login',
