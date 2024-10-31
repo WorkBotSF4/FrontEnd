@@ -4,16 +4,35 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { authGuard } from './guards/auth.guard';
 import { FormsModule } from '@angular/forms';
+import { VistaAdministradorComponent } from './components/vista-administrador/vista-administrador.component';
+import { VistaEntrenadorComponent } from './components/vista-entrenador/vista-entrenador.component';
+import { VistaUsuarioComponent } from './components/vista-usuario/vista-usuario.component';
+
+
 
 const routes: Routes = [
+  {
+    path:'',
+    component : VistaUsuarioComponent
+  },
+  {
+    path: 'VistaEn',
+    component: VistaEntrenadorComponent
+
+  },
+  {
+    path: 'VistaAdministrador',
+    component:VistaAdministradorComponent,
+  },
+
 {
   //este es el login
-  path: '',
+  path: 'login',
   component: LoginComponent,
 
 },
 
-{ path: '', redirectTo: '/login', pathMatch: 'full' },
+{ path: 'login', redirectTo: '/login', pathMatch: 'full' },
 { path: 'login', component: LoginComponent },
 {
   //esta es la pesta;a de registro
