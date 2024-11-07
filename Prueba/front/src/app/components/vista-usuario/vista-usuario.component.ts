@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-vista-usuario',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./vista-usuario.component.css']
 })
 export class VistaUsuarioComponent {
+  constructor(private router: Router) { }
 
   consultarRutinas() {
     // Lógica para consultar las rutinas del usuario

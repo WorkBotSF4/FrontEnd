@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder,Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
-import { User } from 'src/app/interfaces/user';
-import { registerCredentials } from 'src/app/interfaces/registerCredentials';
-import { IResponseRegister } from 'src/app/interfaces/registerResponse';
+
 @Component({
   selector: 'app-modificacion-usuario',
   templateUrl: './modificacion-usuario.component.html',

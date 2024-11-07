@@ -23,16 +23,17 @@ const routes: Routes = [
     path:'',
     component:VistaAdministradorComponent,
   },
-  {
-    path:'consultarclases',
-    component:ConsultarClasesComponent,
-  },
+ {
+  path: 'consultarclases',
+  component: ConsultarClasesComponent,
+
+},
   {
     path:'Clases',
     component:ClasesComponent
   },
   {
-    path:'consultarrutinas',
+    path:'consultarutinas',
     component:ConsultarRutinasComponent,
   },
   {
@@ -64,7 +65,7 @@ const routes: Routes = [
 },
 
 { path: 'login', redirectTo: '/login', pathMatch: 'full' },
-{ path: 'login', component: LoginComponent },
+
 {
   //esta es la pesta;a de registro
   path: 'register',
@@ -76,7 +77,7 @@ const routes: Routes = [
   component:ModificacionUsuarioComponent
 },
 {
-  path:'listadousuarios',
+  path:'listausuarios',
   component:ListadoUsuariosComponent
 },
  {
