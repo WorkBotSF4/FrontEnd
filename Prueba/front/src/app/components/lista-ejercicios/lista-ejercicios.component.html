@@ -16,7 +16,10 @@
           <td>{{ ejercicio.nombre }}</td>
           <td>{{ ejercicio.descripcion }}</td>
           <td>{{ ejercicio.series }}</td>
-          <td><input type="checkbox" [(ngModel)]="ejercicio.selected"></td>
+          <td><label>
+    <input type="checkbox" [(ngModel)]="ejercicio.selected" [id]="'checkbox-' + ejercicio.id">
+    Seleccionar
+  </label></td>
         </tr>
       </tbody>
     </table>
@@ -25,4 +28,3 @@
       <button (click)="consultar()">Consultar</button>
     </div>
   </div>
-  

@@ -15,9 +15,20 @@ import { ModificacionUsuarioComponent } from './components/modificacion-usuario/
 import { ListadoUsuariosComponent } from './components/listado-usuarios/listado-usuarios.component';
 import { LugaresComponent } from './components/lugares/lugares.component';
 import { ClasesComponent } from './components/clases/clases.component';
+import { ListaEjerciciosComponent } from './components/lista-ejercicios/lista-ejercicios.component';
 
 const routes: Routes = [
-
+{path:'modifuser',
+  component:ModificacionUsuarioComponent
+},
+{
+  path:'listausuarios',
+  component:ListadoUsuariosComponent
+},
+ {
+    path:'Lugares',
+    component:LugaresComponent,
+  },
 
   {
     path:'',
@@ -43,6 +54,10 @@ const routes: Routes = [
   {
     path:'ejercicios',
     component:EjerciciosComponent,
+  },
+  {
+path:'listaejercicios',
+component:ListaEjerciciosComponent
   },
   {
     path:'Vistauser',
@@ -73,17 +88,7 @@ const routes: Routes = [
 },
 
 { path: '**', redirectTo: '/login' },
-{path:'modifuser',
-  component:ModificacionUsuarioComponent
-},
-{
-  path:'listausuarios',
-  component:ListadoUsuariosComponent
-},
- {
-    path:'Lugares',
-    component:LugaresComponent,
-  },
+
 ];
 
 @NgModule({

@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
-
+import { FormsModule } from '@angular/forms';
 // Importa TypeUserComponent
 import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
@@ -25,7 +25,7 @@ import { ConsultarClasesComponent } from './components/consultar-clases/consulta
 import { ClasesComponent } from './components/clases/clases.component';
 import { VistaUsuarioComponent } from './components/vista-usuario/vista-usuario.component';
 import { LugaresComponent } from './components/lugares/lugares.component';
-
+import { ListaEjerciciosComponent } from './components/lista-ejercicios/lista-ejercicios.component';
 import { VistaEntrenadorComponent } from './components/vista-entrenador/vista-entrenador.component';
 import { VistaAdministradorComponent } from './components/vista-administrador/vista-administrador.component';
 
@@ -48,7 +48,8 @@ import { VistaAdministradorComponent } from './components/vista-administrador/vi
     ListadoUsuariosComponent,
     VistaEntrenadorComponent,
     VistaAdministradorComponent,
-    RutinaComponent
+    RutinaComponent,
+    ListaEjerciciosComponent
 
 
 
@@ -66,6 +67,7 @@ import { VistaAdministradorComponent } from './components/vista-administrador/vi
     BrowserAnimationsModule,
     SharedModule,
     CommonModule,
+    FormsModule
 
 
 
