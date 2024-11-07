@@ -18,10 +18,14 @@ import { ClasesComponent } from './components/clases/clases.component';
 
 const routes: Routes = [
 
+  {
+    path:'',
+    component:LugaresComponent,
+  },
 
   {
-    path:'Vistaadm',
-    component:VistaAdministradorComponent,
+    path:'Vista user',
+    component:VistaUsuarioComponent,
   },
  {
   path: 'consultarclases',
@@ -49,7 +53,7 @@ const routes: Routes = [
     component:VistaUsuarioComponent,
   },
   {
-    path:'',
+    path:'Vistaen',
     component: VistaEntrenadorComponent,
   },
 
@@ -80,10 +84,6 @@ const routes: Routes = [
   path:'listausuarios',
   component:ListadoUsuariosComponent
 },
- {
-    path:'Lugares',
-    component:LugaresComponent,
-  },
 ];
 
 @NgModule({
