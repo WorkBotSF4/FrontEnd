@@ -19,7 +19,7 @@ import { ClasesComponent } from './components/clases/clases.component';
 const routes: Routes = [
 
   {
-    path:'',
+    path:'lugares',
     component:LugaresComponent,
   },
 
@@ -58,7 +58,7 @@ const routes: Routes = [
   },
 
   {
-    path:'Vistaad',
+    path:'',
     component: VistaAdministradorComponent,
   },
 {
