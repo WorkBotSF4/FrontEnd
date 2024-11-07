@@ -66,6 +66,10 @@ const routes: Routes = [
 {
   path:'listadousuarios',
   component:ListadoUsuariosComponent
+},
+{
+  path:'modificarlugar',
+  component:ModificacionUsuarioComponent
 }
 ];
 
