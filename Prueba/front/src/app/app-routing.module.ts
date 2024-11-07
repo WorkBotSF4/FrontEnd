@@ -11,19 +11,16 @@ import { EjerciciosComponent } from './components/ejercicios/ejercicios.componen
 import { RutinaComponent } from './components/rutina/rutina.component';
 import { ConsultarRutinasComponent } from './components/consultar-rutinas/consultar-rutinas.component';
 import { ConsultarClasesComponent } from './components/consultar-clases/consultar-clases.component';
-import { LugaresComponent } from './components/lugares/lugares.component';
+import { ModificacionUsuarioComponent } from './components/modificacion-usuario/modificacion-usuario.component';
+import { ListadoUsuariosComponent } from './components/listado-usuarios/listado-usuarios.component';
 
 const routes: Routes = [
   {
     path:'',
-    component:LugaresComponent,
-  },
-  {
-    path:'consultarclas',
     component:ConsultarClasesComponent,
   },
   {
-    path:'cosnultarru',
+    path:'Rutinas',
     component:ConsultarRutinasComponent,
   },
   {
@@ -61,7 +58,15 @@ const routes: Routes = [
   path: 'register',
   component: RegisterComponent,
 },
-{ path: '**', redirectTo: '/login' }
+
+{ path: '**', redirectTo: '/login' },
+{path:'modifuser',
+  component:ModificacionUsuarioComponent
+},
+{
+  path:'listadousuarios',
+  component:ListadoUsuariosComponent
+}
 ];
 
 @NgModule({
