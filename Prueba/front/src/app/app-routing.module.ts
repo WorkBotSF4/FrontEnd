@@ -14,10 +14,15 @@ import { ConsultarClasesComponent } from './components/consultar-clases/consulta
 import { ModificacionUsuarioComponent } from './components/modificacion-usuario/modificacion-usuario.component';
 import { ListadoUsuariosComponent } from './components/listado-usuarios/listado-usuarios.component';
 import { LugaresComponent } from './components/lugares/lugares.component';
+import { ClasesComponent } from './components/clases/clases.component';
 
 const routes: Routes = [
   {
     path:'',
+    component:ClasesComponent,
+  },
+  {
+    path:'Lugares',
     component:LugaresComponent,
   },
   {
