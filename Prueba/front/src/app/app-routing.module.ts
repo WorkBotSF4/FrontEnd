@@ -13,10 +13,15 @@ import { ConsultarRutinasComponent } from './components/consultar-rutinas/consul
 import { ConsultarClasesComponent } from './components/consultar-clases/consultar-clases.component';
 import { ModificacionUsuarioComponent } from './components/modificacion-usuario/modificacion-usuario.component';
 import { ListadoUsuariosComponent } from './components/listado-usuarios/listado-usuarios.component';
+import { LugaresComponent } from './components/lugares/lugares.component';
 
 const routes: Routes = [
   {
     path:'',
+    component:LugaresComponent,
+  },
+  {
+    path:'Clases',
     component:ConsultarClasesComponent,
   },
   {
