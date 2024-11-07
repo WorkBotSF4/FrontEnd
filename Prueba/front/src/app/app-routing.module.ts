@@ -28,7 +28,7 @@ const routes: Routes = [
     component:VistaUsuarioComponent,
   },
  {
-  path: 'consultarclases',
+  path: '',
   component: ConsultarClasesComponent,
 
 },
@@ -37,7 +37,7 @@ const routes: Routes = [
     component:ClasesComponent
   },
   {
-    path:'consultarutinas',
+    path:'Rutina',
     component:ConsultarRutinasComponent,
   },
   {
@@ -58,7 +58,7 @@ const routes: Routes = [
   },
 
   {
-    path:'',
+    path:'Vistad',
     component: VistaAdministradorComponent,
   },
 {

@@ -1,3 +1,4 @@
+<!-- src/app/consultar-clases.component.html -->
 <div class="container">
   <h1>Clases</h1>
   <table class="table">
@@ -10,18 +11,11 @@
       </tr>
     </thead>
     <tbody>
-      <!-- Aquí puedes agregar filas de ejemplo o enlazar con datos reales -->
-      <tr>
-        <td>1</td>
-        <td>Clase A</td>
-        <td>Descripción de la Clase A</td>
-        <td>10</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Clase B</td>
-        <td>Descripción de la Clase B</td>
-        <td>8</td>
+      <tr *ngFor="let dato of datos">
+        <td>{{ dato.id }}</td>
+        <td>{{ dato.name }}</td>
+        <td>{{ dato.description }}</td>
+        <td>{{ dato.serie }}</td>
       </tr>
     </tbody>
   </table>

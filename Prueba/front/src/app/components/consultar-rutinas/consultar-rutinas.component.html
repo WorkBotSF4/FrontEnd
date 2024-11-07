@@ -1,3 +1,4 @@
+<!-- src/app/consultar-rutinas.component.html -->
 <div class="container">
   <h1>Rutinas</h1>
   <table class="table">
@@ -10,18 +11,11 @@
       </tr>
     </thead>
     <tbody>
-      <!-- Aquí puedes agregar filas de ejemplo o enlazar con datos reales -->
-      <tr>
-        <td>1</td>
-        <td>Rutina A</td>
-        <td>Comentario sobre la Rutina A</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Rutina B</td>
-        <td>Comentario sobre la Rutina B</td>
-        <td>8</td>
+      <tr *ngFor="let dato of datos">
+        <td>{{ dato.id }}</td>
+        <td>{{ dato.name }}</td>
+        <td>{{ dato.remarks }}</td>
+        <td>{{ dato.exercises }}</td>
       </tr>
     </tbody>
   </table>
