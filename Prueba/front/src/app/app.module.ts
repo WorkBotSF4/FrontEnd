@@ -23,11 +23,11 @@ import { RutinaComponent } from './components/rutina/rutina.component';
 import { ConsultarRutinasComponent } from './components/consultar-rutinas/consultar-rutinas.component';
 import { ConsultarClasesComponent } from './components/consultar-clases/consultar-clases.component';
 import { ClasesComponent } from './components/clases/clases.component';
+import { VistaUsuarioComponent } from './components/vista-usuario/vista-usuario.component';
 import { LugaresComponent } from './components/lugares/lugares.component';
 
-
-
-
+import { VistaEntrenadorComponent } from './components/vista-entrenador/vista-entrenador.component';
+import { VistaAdministradorComponent } from './components/vista-administrador/vista-administrador.component';
 
 
 
@@ -44,8 +44,11 @@ import { LugaresComponent } from './components/lugares/lugares.component';
     ConsultarClasesComponent,
     ClasesComponent,
     LugaresComponent,
-
-
+    VistaUsuarioComponent,
+    ListadoUsuariosComponent,
+    VistaEntrenadorComponent,
+    VistaAdministradorComponent,
+    RutinaComponent
 
 
 
@@ -62,12 +65,15 @@ import { LugaresComponent } from './components/lugares/lugares.component';
     ToastModule,
     BrowserAnimationsModule,
     SharedModule,
-    CommonModule
+    CommonModule,
+
+
+
   ],
   providers: [MessageService],
   bootstrap: [AppComponent],
   exports: [
-    
+
   ]
 })
 export class AppModule { }

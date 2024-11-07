@@ -17,20 +17,23 @@ import { LugaresComponent } from './components/lugares/lugares.component';
 import { ClasesComponent } from './components/clases/clases.component';
 
 const routes: Routes = [
+
+
   {
-    path:'',
-    component:ClasesComponent,
+    path:'Vistaadm',
+    component:VistaAdministradorComponent,
   },
-  {
-    path:'Lugares',
-    component:LugaresComponent,
-  },
+ {
+  path: 'consultarclases',
+  component: ConsultarClasesComponent,
+
+},
   {
     path:'Clases',
-    component:ConsultarClasesComponent,
+    component:ClasesComponent
   },
   {
-    path:'Rutinas',
+    path:'consultarutinas',
     component:ConsultarRutinasComponent,
   },
   {
@@ -46,7 +49,7 @@ const routes: Routes = [
     component:VistaUsuarioComponent,
   },
   {
-    path:'Vistan',
+    path:'',
     component: VistaEntrenadorComponent,
   },
 
@@ -62,7 +65,7 @@ const routes: Routes = [
 },
 
 { path: 'login', redirectTo: '/login', pathMatch: 'full' },
-{ path: 'login', component: LoginComponent },
+
 {
   //esta es la pesta;a de registro
   path: 'register',
@@ -74,9 +77,13 @@ const routes: Routes = [
   component:ModificacionUsuarioComponent
 },
 {
-  path:'listadousuarios',
+  path:'listausuarios',
   component:ListadoUsuariosComponent
-}
+},
+ {
+    path:'Lugares',
+    component:LugaresComponent,
+  },
 ];
 
 @NgModule({
