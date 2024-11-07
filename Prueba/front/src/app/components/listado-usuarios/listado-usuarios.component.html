@@ -16,7 +16,8 @@
       <td>{{ user.documento }}</td>
       <td>{{ user.rol }}</td>
       <td>
-        <p-button styleClass="w-1/3" type="submit" (click)="onModifyUser(user)">Modificar</p-button>
+        <p-button styleClass="w-1/3" type="submit"
+        (click)="onModifyUser(user)" routerLink="/modifuser" class="btn btn-primary">Modificar</p-button>
         <p-button styleClass="w-1/3" type="submit" (click)="onDeleteUser(user)">Eliminar</p-button>
       </td>
     </tr>

@@ -1,6 +1,7 @@
 <div class="container">
     <h1>Vista Usuario</h1>
-    <button (click)="consultarRutinas()">Consultar Rutinas</button>
-    <button (click)="consultarClases()">Consultar Clases</button>
-    <button (click)="cerrarSesion()">Cerrar Sesión</button>
+
+    <button routerLink="/consultarrutinas" class="btn btn-primary" (click)="consultarRutinas()" >Consultar Rutinas</button>
+    <button routerLink="/consultarclases" class="btn btn-primary" (click)="consultarClases()" >Consultar Clases</button>
+    <button routerLink="/login" class="btn btn-primary" (click)="cerrarSesion()" >Cerrar Sesión</button>
   </div>

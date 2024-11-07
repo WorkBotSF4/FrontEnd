@@ -1,0 +1,30 @@
+.container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .box {
+    border: 2px solid black; /* Añade un borde al recuadro */
+    padding: 20px; /* Añade espacio dentro del recuadro */
+    display: inline-block; /* Ajusta el tamaño del recuadro al contenido */
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px; /* Añade espacio entre los botones */
+  }
+  
+  .blue-button {
+    background-color: blue;
+    color: white;
+    margin-bottom: 0; /* Elimina el margen inferior del último botón */
+  }
+  

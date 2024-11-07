@@ -13,14 +13,26 @@ import { ConsultarRutinasComponent } from './components/consultar-rutinas/consul
 import { ConsultarClasesComponent } from './components/consultar-clases/consultar-clases.component';
 import { ModificacionUsuarioComponent } from './components/modificacion-usuario/modificacion-usuario.component';
 import { ListadoUsuariosComponent } from './components/listado-usuarios/listado-usuarios.component';
+import { LugaresComponent } from './components/lugares/lugares.component';
+import { ClasesComponent } from './components/clases/clases.component';
 
 const routes: Routes = [
+
+
   {
-    path:'consultarclas',
+    path:'',
+    component:VistaAdministradorComponent,
+  },
+  {
+    path:'consultarclases',
     component:ConsultarClasesComponent,
   },
   {
-    path:'',
+    path:'Clases',
+    component:ClasesComponent
+  },
+  {
+    path:'consultarrutinas',
     component:ConsultarRutinasComponent,
   },
   {
@@ -67,10 +79,10 @@ const routes: Routes = [
   path:'listadousuarios',
   component:ListadoUsuariosComponent
 },
-{
-  path:'modificarlugar',
-  component:ModificacionUsuarioComponent
-}
+ {
+    path:'Lugares',
+    component:LugaresComponent,
+  },
 ];
 
 @NgModule({

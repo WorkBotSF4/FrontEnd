@@ -24,6 +24,7 @@ import { ConsultarRutinasComponent } from './components/consultar-rutinas/consul
 import { ConsultarClasesComponent } from './components/consultar-clases/consultar-clases.component';
 import { ClasesComponent } from './components/clases/clases.component';
 
+import { LugaresComponent } from './components/lugares/lugares.component';
 
 
 
@@ -42,8 +43,7 @@ import { ClasesComponent } from './components/clases/clases.component';
     ConsultarRutinasComponent,
     ConsultarClasesComponent,
     ClasesComponent,
-
-
+    LugaresComponent,
 
 
 
@@ -65,7 +65,7 @@ import { ClasesComponent } from './components/clases/clases.component';
   providers: [MessageService],
   bootstrap: [AppComponent],
   exports: [
-    
+
   ]
 })
 export class AppModule { }
