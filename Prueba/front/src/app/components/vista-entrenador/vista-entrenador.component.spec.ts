@@ -6,12 +6,10 @@ describe('VistaEntrenadorComponent', () => {
   let component: VistaEntrenadorComponent;
   let fixture: ComponentFixture<VistaEntrenadorComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [VistaEntrenadorComponent]
-    })
-    .compileComponents();
-
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [VistaEntrenadorComponent]
+    });
     fixture = TestBed.createComponent(VistaEntrenadorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

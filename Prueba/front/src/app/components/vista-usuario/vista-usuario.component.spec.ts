@@ -6,12 +6,10 @@ describe('VistaUsuarioComponent', () => {
   let component: VistaUsuarioComponent;
   let fixture: ComponentFixture<VistaUsuarioComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [VistaUsuarioComponent]
-    })
-    .compileComponents();
-
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [VistaUsuarioComponent]
+    });
     fixture = TestBed.createComponent(VistaUsuarioComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

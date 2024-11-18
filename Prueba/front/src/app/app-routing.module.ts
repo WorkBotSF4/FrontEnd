@@ -1,89 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
-import { authGuard } from './guards/auth.guard';
-import { FormsModule } from '@angular/forms';
-import { VistaAdministradorComponent } from './components/vista-administrador/vista-administrador.component';
-import { VistaEntrenadorComponent } from './components/vista-entrenador/vista-entrenador.component';
-import { VistaUsuarioComponent } from './components/vista-usuario/vista-usuario.component';
-import { EjerciciosComponent } from './components/ejercicios/ejercicios.component';
-import { RutinaComponent } from './components/rutina/rutina.component';
-import { ConsultarRutinasComponent } from './components/consultar-rutinas/consultar-rutinas.component';
-import { ConsultarClasesComponent } from './components/consultar-clases/consultar-clases.component';
-import { ModificacionUsuarioComponent } from './components/modificacion-usuario/modificacion-usuario.component';
-import { ListadoUsuariosComponent } from './components/listado-usuarios/listado-usuarios.component';
-import { LugaresComponent } from './components/lugares/lugares.component';
 import { ClasesComponent } from './components/clases/clases.component';
+import { ConsulRutinasComponent } from './components/consul-rutinas/consul-rutinas.component';
+import { VistaUsuarioComponent } from './components/vista-usuario/vista-usuario.component';
+import { HomeComponent } from './components/home/home.component';
+import { VistaEntrenadorComponent } from './components/vista-entrenador/vista-entrenador.component';
 
 const routes: Routes = [
 
-  {
-    path:'lugares',
-    component:LugaresComponent,
-  },
+  {path:'clases',component:ClasesComponent},
+  {path:'rutinas',component:ConsulRutinasComponent},
+  {path:'vis',component:VistaUsuarioComponent},
+  {path:'',component:VistaEntrenadorComponent}
 
-  {
-    path:'Vista user',
-    component:VistaUsuarioComponent,
-  },
- {
-  path: '',
-  component: ConsultarClasesComponent,
 
-},
-  {
-    path:'Clases',
-    component:ClasesComponent
-  },
-  {
-    path:'Rutina',
-    component:ConsultarRutinasComponent,
-  },
-  {
-    path:'rutina',
-    component:RutinaComponent,
-  },
-  {
-    path:'ejercicios',
-    component:EjerciciosComponent,
-  },
-  {
-    path:'Vistauser',
-    component:VistaUsuarioComponent,
-  },
-  {
-    path:'Vistaen',
-    component: VistaEntrenadorComponent,
-  },
-
-  {
-    path:'Vistad',
-    component: VistaAdministradorComponent,
-  },
-{
-  //este es el login
-  path: 'login',
-  component: LoginComponent,
-
-},
-
-{ path: 'login', redirectTo: '/login', pathMatch: 'full' },
-
-{
-  //esta es la pesta;a de registro
-  path: 'register',
-  component: RegisterComponent,
-},
-
-{ path: '**', redirectTo: '/login' },
-{path:'modifuser',
-  component:ModificacionUsuarioComponent
-},
-{
-  path:'listausuarios',
-  component:ListadoUsuariosComponent
-},
 ];
 
 @NgModule({

@@ -1,19 +1,19 @@
 <div class="table-container">
-    <h2 class="table-title">Clases</h2>
+    <h2 class="table-title">Rutinas</h2>
     <table>
       <thead>
         <tr>
           <th>ID</th>
           <th>Nombre</th>
-          <th>Descripcion</th>
-          <th>Series</th>
+          <th>Comentarios</th>
+          <th>Ejercicios</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let item of data">
           <td>{{item.id}}</td>
           <td>{{item.name}}</td>
-          <td>{{item.status}}</td>   
+          <td>{{item.status}}</td>
           <td>{{item.species}}</td>
         </tr>
       </tbody>

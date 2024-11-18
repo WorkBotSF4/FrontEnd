@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-vista-usuario',
@@ -7,20 +6,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./vista-usuario.component.css']
 })
 export class VistaUsuarioComponent {
-  constructor(private router: Router) { }
 
   consultarRutinas() {
-    // Lógica para consultar las rutinas del usuario
-    console.log('Consultando rutinas del usuario...');
+    // Lógica para consultar rutinas
+    console.log('Consultar Rutinas');
   }
 
   consultarClases() {
-    // Lógica para consultar las clases del usuario
-    console.log('Consultando clases del usuario...');
+    // Lógica para consultar clases
+    console.log('Consultar Clases');
   }
 
   cerrarSesion() {
-    // Lógica para cerrar sesión (igual que en el otro componente)
-    console.log('Cerrando sesión...');
+    // Lógica para cerrar sesión
+    console.log('Cerrar Sesión');
   }
 }
